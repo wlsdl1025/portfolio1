@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- content="IE=edge" 는 IE브라우저에서, 각 버전 중 가장 최신 표준모드를 선택하는 문서모드 IE6 부터 IE11까지 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO(검색 엔진 최적화) -->
+    <title>toojin&#39;s portfolio</title>
+    <meta name="description" content="portfolio for toojin" />
+    <!-- 사이트를 자세히 설명하는 문구를 넣어주면 좋은 메타태그  -->
+    <meta name="author" content="toojin" />
+    <!-- author는 작가,저자라는 뜻 -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- OG(Open Graph Data) SNS에 사이트를 배포했을때 보이게 하는 이미지, 사이트 설명등에 대한 메타태그 -->
+    <meta property="og:title" content="투진의 포트폴리오" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="배포후 생성된 URL" />
+    <meta property="og:image" content="배포후 생성된 이미지 URL" />
+    <!-- google font 구글폰트 -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Gothic:wght@800&family=Noto+Sans+KR:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome 폰트어썸(아이콘무료이용) -->
+    <script
+      src="https://kit.fontawesome.com/5cad1f58b8.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- JavaScript defer란 미루다 연기하다라는 뜻으로 먼저 외부자바스크립트파일을 다운받기전에 html 코드를 분석한후 외부자스소스를 다운받아라 그래야 html UI를 먼저 구현한 후 자바스크립트가 시작됨. 아마 추측이지만 로딩이 오래걸리는걸 피하기 위함이 아닐까-->
+
+    <!-- type을 모듈로 주는 이유는 각각의 자스에 변수선언한것이 중복되서 읽히지 않기 위해서.. 나중에 규모가 커질때 유지보수를 위해서 이렇게 하는것이 좋음 -->
+    <script type="module" src="src/main.js " defer></script>
+    <script type="module" src="src/project.js " defer></script>
+  </head>
+  <body>
+    <!-- header!! -->
+    <header class="header">
+      <div class="header__logo">
+        <img
+          class="header__logo__img"
+          src="images/favicon.ico"
+          alt="logo image"
+        />
+        <h1 class="header__logo__title"><a href="#">Toojin</a></h1>
+      </div>
+      <nav class="header_nav">
+        <ul class="header_menu">
+          <li><a class="header_menu__item active" href="#home">Home</a></li>
+          <li><a class="header_menu__item" href="#about">About</a></li>
+          <li><a class="header_menu__item" href="#skills">skills</a></li>
+          <li><a class="header_menu__item" href="#work">My work</a></li>
+          <li>
+            <a class="header_menu__item" href="#testimonials">Testimonials</a>
+          </li>
+          <li><a class="header_menu__item" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="header__toggle" aria-label="navigation menu toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+    <!-- main!! -->
+    <main>
+      <!-- Home -->
+
+      <section id="home" class="section">
+        <div class="home__container">
+          <img
+            class="home_avatar"
+            src="images/backgroud-remove.png"
+            alt="toojin's profile"
+          />
+          <h2 class="home_title">
+            Hello! <br />
+            I&#39;m
+            <strong class="home_title--strong"
+              >Frontend Enginear, Toojin</strong
+            >
+          </h2>
+          <p class="home_description">
+            변화되는 환경에 우직하게 적응하는 나무처럼 지속적으로 성장하는 사람
+          </p>
+          <a class="home_contact" href="#contact">Contact Me</a>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section max-container">
+        <h2 class="title">About me</h2>
+        <p class="description">
+          나무는 사계절을 통해 자연의 순환을 체험하며 변화에 적응하는 놀라운
+          능력을 지니고 있습니다. 이를 영감으로 삼아, 포트폴리오는 나란 사람이
+          계절의 흐름과 마주하며 성장하고 발전하는 모습을 담아내었습니다.
+        </p>
+        <ul class="majors">
+          <li class="major">
+            <i class="fa-brands fa-html5 major_icon"></i>
+            <p class="major_title">Front-end</p>
+            <p>HTML, CSS, JavaScript</p>
+          </li>
+          <li class="major">
+            <i class="fa-solid fa-mobile major_icon"></i>
+            <p class="major_title">Mobile</p>
+            <p>HTML, CSS, JavaScript</p>
+          </li>
+          <li class="major">
+            <i class="fa-solid fa-server major_icon"></i>
+            <p class="major_title">back-end</p>
+            <p>HTML, CSS, JavaScript</p>
+          </li>
+        </ul>
+        <ul class="jobs">
+          <li class="job">
+            <img src="images/Hanwha.jpg" alt="Hanwha logo" width="100px" />
+            <div>
+              <p class="job_name">Hanwha as Senior Software Enginear</p>
+              <p class="job_pre">2019.10 ~ Untill Now</p>
+            </div>
+          </li>
+          <li class="job">
+            <img src="images/Hanwha.jpg" alt="Hanwha logo" width="100px" />
+            <div>
+              <p class="job_name">Hanwha as Senior Software Enginear</p>
+              <p class="job_pre">2019.10 ~ Unitil Now</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- skills -->
+
+      <section id="skills" class="section">
+        <div class="max-container">
+          <h2 class="title">My skills</h2>
+          <p class="description">skills & Atti</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nulla
+            voluptatibus tempora architecto libero alias molestiae ipsum est
+            quos vel. Quaerat enim pariatur unde eius repudiandae rem optio
+            praesentium facere?
+          </p>
+          <div class="skills">
+            <section class="skills_coding">
+              <h3 class="skills_title">Coding skills</h3>
+              <ul>
+                <li class="bar">
+                  <div class="bar_metadata">
+                    <span>HTML</span><span>98%</span>
+                  </div>
+                  <div class="bar_bg">
+                    <div class="bar_value" style="width: 98%"></div>
+                  </div>
+                </li>
+
+                <li class="bar">
+                  <div class="bar_metadata">
+                    <span>CSS</span><span>90%</span>
+                  </div>
+                  <div class="bar_bg">
+                    <div class="bar_value" style="width: 90%"></div>
+                  </div>
+                </li>
+
+                <li class="bar">
+                  <div class="bar_metadata">
+                    <span>JavaScript</span><span>90%</span>
+                  </div>
+                  <div class="bar_bg">
+                    <div class="bar_value" style="width: 90%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar_metadata">
+                    <span>TypeScript</span><span>80%</span>
+                  </div>
+                  <div class="bar_bg">
+                    <div class="bar_value" style="width: 80%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar_metadata">
+                    <span>React</span><span>79%</span>
+                  </div>
+                  <div class="bar_bg">
+                    <div class="bar_value" style="width: 79%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar_metadata">
+                    <span>NodeJs</span><span>68%</span>
+                  </div>
+                  <div class="bar_bg">
+                    <div class="bar_value" style="width: 68%"></div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+            <section class="skills_tools">
+              <h3 class="skills_title">Tools</h3>
+              <ul>
+                <li>Visual Studio Code</li>
+                <li>Intell</li>
+                <li>Android Studio Code</li>
+                <li>iOS tools</li>
+                <li>Sketch app</li>
+              </ul>
+            </section>
+            <section class="skills_etc">
+              <h3 class="skills_title">Etc</h3>
+              <ul>
+                <li>Git</li>
+                <li>Master</li>
+                <li>Photo Shop</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- work -->
+      <section id="work" class="section">
+        <div class="max-container">
+          <h2 class="title">My work</h2>
+          <p class="description">projects</p>
+          <ul class="categories">
+            <li>
+              <button class="category category_selected" data-category="all">
+                All <span class="category_count">8</span>
+              </button>
+            </li>
+            <li>
+              <button class="category" data-category="front-end">
+                Front-end <span class="category_count">4</span>
+              </button>
+            </li>
+            <li>
+              <button class="category" data-category="back-end">
+                back-end <span class="category_count">2</span>
+              </button>
+            </li>
+            <li>
+              <button class="category" data-category="mobile">
+                Mobile <span class="category_count">2</span>
+              </button>
+            </li>
+          </ul>
+
+          <ul class="projects">
+            <li class="project" data-type="front-end">
+              <a href="#" target="_blank">
+                <img
+                  src="images/work5.jpg"
+                  alt="projects_1"
+                  class="project_img"
+                />
+                <div class="prorject_metadata">
+                  <h3 class="project_title">Project #1</h3>
+                  <p>Clone Coding with HTML, CSSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="front-end">
+              <a href="#" target="_blank">
+                <img
+                  src="images/work5.jpg"
+                  alt="projects_2"
+                  class="project_img"
+                />
+                <div class="prorject_metadata">
+                  <h3 class="project_title">Project #2</h3>
+                  <p>Clone Coding with HTML, CSSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="back-end">
+              <a href="#" target="_blank">
+                <img
+                  src="images/work5.jpg"
+                  alt="projects_3"
+                  class="project_img"
+                />
+                <div class="prorject_metadata">
+                  <h3 class="project_title">Project #3</h3>
+                  <p>Clone Coding with HTML, CSSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="mobile">
+              <a href="#" target="_blank">
+                <img
+                  src="images/work5.jpg"
+                  alt="projects_4"
+                  class="project_img"
+                />
+                <div class="prorject_metadata">
+                  <h3 class="project_title">Project #4</h3>
+                  <p>Clone Coding with HTML, CSSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="mobile">
+              <a href="#" target="_blank">
+                <img
+                  src="images/work5.jpg"
+                  alt="projects_5"
+                  class="project_img"
+                />
+                <div class="prorject_metadata">
+                  <h3 class="project_title">Project #5</h3>
+                  <p>Clone Coding with HTML, CSSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="front-end">
+              <a href="#" target="_blank">
+                <img
+                  src="images/work5.jpg"
+                  alt="projects_6"
+                  class="project_img"
+                />
+                <div class="prorject_metadata">
+                  <h3 class="project_title">Project #6</h3>
+                  <p>Clone Coding with HTML, CSSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="back-end">
+              <a href="#" target="_blank">
+                <img
+                  src="images/work5.jpg"
+                  alt="projects_7"
+                  class="project_img"
+                />
+                <div class="prorject_metadata">
+                  <h3 class="project_title">Project #7</h3>
+                  <p>Clone Coding with HTML, CSSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="front-end">
+              <a href="#" target="_blank">
+                <img
+                  src="images/work5.jpg"
+                  alt="projects_8"
+                  class="project_img"
+                />
+                <div class="prorject_metadata">
+                  <h3 class="project_title">Project #8</h3>
+                  <p>Clone Coding with HTML, CSSS</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Testimonials -->
+      <section id="testimonials" class="section max-container">
+        <h2 class="title">testimonial</h2>
+        <p class="description">see what they say about me</p>
+        <ul class="textimonials">
+          <li class="textimonial">
+            <img
+              class="testimonial_img"
+              src="images/circle_img.png"
+              alt="people1"
+            />
+            <div class="testimonial_bubble">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
+                sapiente ipsa impedit! Iusto aperiam labore ipsum similique
+                minima ullam explicabo odit quasi hic alias voluptatem saepe,
+                nihil esse. Reprehenderit, nesciunt.
+              </p>
+              <p><a href="#" class="tesimonial_name">James kim</a> /Google</p>
+            </div>
+          </li>
+
+          <li class="textimonial">
+            <img
+              class="testimonial_img"
+              src="images/circle_img.png"
+              alt="people2"
+            />
+            <div class="testimonial_bubble">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
+                sapiente ipsa impedit! Iusto aperiam labore ipsum similique
+                minima ullam explicabo odit quasi hic alias voluptatem saepe,
+                nihil esse. Reprehenderit, nesciunt.
+              </p>
+              <p><a href="#" class="tesimonial_name">James kim</a> /Google</p>
+            </div>
+          </li>
+
+          <li class="textimonial">
+            <img
+              class="testimonial_img"
+              src="images/circle_img.png"
+              alt="people3"
+            />
+            <div class="testimonial_bubble">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
+                sapiente ipsa impedit! Iusto aperiam labore ipsum similique
+                minima ullam explicabo odit quasi hic alias voluptatem saepe,
+                nihil esse. Reprehenderit, nesciunt.
+              </p>
+              <p><a href="#" class="tesimonial_name">James kim</a> /Google</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- Arrow up -->
+      <aside>
+        <a href="#home" title="back to top" class="arrow_up"
+          ><i class="fa-solid fa-arrow-up"></i
+        ></a>
+        <!--  a태그안에 아이태그만있고 어떠한 텍스트, 즉 설명할 수 있는 요소가 없음 이러면
+        음성낭독기가 읽을 수 없게 되어 웹 접근성에 어긋남 이걸 해결하기 위해 a태그에 title 속성을 적어주면 음성낭독기가 아이콘이 무엇인지 설명할 수 있게 됨 -->
+      </aside>
+    </main>
+
+    <!-- footer!! -->
+    <footer id="contact" class="section">
+      <div class="max-container">
+        <h2 class="title">Let&#39;s talk</h2>
+        <p class="description">wlsdl5986@gmail.com</p>
+        <ul class="contact_links">
+          <li>
+            <a
+              href="https://www.naver.com"
+              target="_blank"
+              title="my email link"
+              class="contact_link"
+            ></a
+            ><i class="fa-brands fa-instagram"></i>
+          </li>
+          <li>
+            <a
+              href="https://www.naver.com"
+              target="_blank"
+              title="my instagram link"
+              class="contact_link"
+            ></a
+            ><i class="fa-brands fa-instagram"></i>
+          </li>
+        </ul>
+
+        <p>©Dream coding toojin - All right</p>
+      </div>
+    </footer>
+  </body>
+</html>
